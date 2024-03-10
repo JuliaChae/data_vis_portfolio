@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Vis & Society Assignment 2</title>
+    <link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            <small>Assignment 2</small>
+            Exploratory Data Analysis
+        </h1>
+
+        <p>
+            <strong>Julia Chae</strong> — <em>chaenayo@mit.edu</em>
+        </p>
+    </header>
+    <main>
+        <section>
+            <h2>Subtheme: Visualizing Exclusionary Zoning</h2>
+
+            <h3>Overall Analysis Questions</h3>
+            <h4>Note: I will be using the appreviation SFHZ to refer to single-family house zoning throughout the
+                assignment</h4>
+            <ol>
+                <li>Where are the exclusionary single-family house zoning (SFHZ) areas in Massachusetts? Are there any
+                    geographical patterns in the way that they are situated?</li>
+                <li>What is the relationship between SFHZ and income?</li>
+                <li>What are the prominent ethnic groups in the SFHZ areas? Does the ethnic make-up change depending on
+                    the zoning type?</li>
+                <li>Is there a difference in the type of households present in SFHZ and non-SFHZ areas?</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Discoveries & Insights</h2>
+            <h3>Q1: Where are the exclusionary single-family house zoning (SFHZ) areas in Massachusetts? Are there any
+                geographical patterns in the way that they are situated?</h3>
+            <figure>
+                <img src="images/map.png" alt="" width="1000" />
+                <figcaption>
+                    This is a map of Massachusetts housing zones colored by percentage of the residential land area that
+                    is zoned exclusively for single-family homes. Darker hue represents a higher percentage of
+                    SFHZ coverage, lighter hues represent lower coverage, and other states and
+                    non-residential zones within Massachusetts are grayed out. First, it can be seen that residential
+                    land makes up for the majority of Massachusetts, with very little grayed out areas within the state.
+                    The residential areas within the state are almost equally divided between having single-family
+                    zoning and without single-family zoning, and the majority of the zones that have single-family
+                    zoning have a high percentage of it. There is no clear geographic distribution of single-family
+                    zoning, with the zones dispersed evenly across the state.
+                    <br /><br />
+                    Follow up questions:
+                    <ol>
+                        <li>Since there seems to be little correlation between spatial location of the zones within the
+                            state, what other factors affect the housing zones?</li>
+                        <li>Also, I noticed that the greater Boston area (which I know to be very densely populated)
+                            seemed to have little single-family zoning, so is there a correlation between population and
+                            zoning areas?</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <h4>To quickly investigate the follow-up question 2), I visualized the population distribution across
+                Massachusetts: </h4>
+            <h3>Q1: Where are the exclusionary single-family house zoning (SFHZ) areas in Massachusetts? Are there any
+                geographical patterns in the way that they are situated?</h3>
+            <figure>
+                <img src="images/pop.png" alt="" width="1000" />
+                <figcaption>
+                    The above map shows the population for each zoning area in Massachusetts. Again, the darker shade
+                    represents higher population while lighter shade represents lower population. From cross-referencing
+                    with Figure 1, the most populous areas in and around Boston do correspond with no single-family
+                    zones, however there doesn’t seem to be a strong correlation with population throughout the rest of
+                    the state as we expected. This prompts further investigation to understand what factors do correlate
+                    with SFHZ, which I carry out in the rest of the
+                    assignment.
+                </figcaption>
+            </figure>
+
+            <h3>What is the relationship between SFHZ and income?</h3>
+            <figure>
+                <img src="images/income.png" alt="" width="1000" />
+                <figcaption>
+                    The pie chart shows the breakdown of residents’ income in Single Family Zoning vs Non-Single Family
+                    Zoning residential areas, with the number of people in that income bracket labeled. The dataset had
+                    16 income intervals, which I grouped into five brackets with statistics from <a
+                        href="https://docs.google.com/spreadsheets/d/1w2YD5z__2eFEK2aCxUG4j18KCCx2aA1R1ix_vOp9oqI/edit#gid=0">Boston
+                        Income Limits</a> to inform some of
+                    the groupings. Although there low, medium and upper-medium income bracket areas do not change
+                    significantly between the two pies, extremely low income area decreases and high-income area
+                    increases for areas with single-family zoning.
+                    <br /><br />
+                    Follow up question:
+                    <ol>
+                        <li>Is there a strong correlation between income and single-family zoning area percentage? </li>
+                    </ol>
+                </figcaption>
+            </figure>
+
+            <h3>What is the relationship between SFHZ and income?</h3>
+            <figure>
+                <img src="images/income_2.jpg" alt="" width="1000" />
+                <figcaption>
+                    To investigate further, I generated a scatter plot of the relationship between percentage of area
+                    that is single-family zoned in
+                    SFHZ areas and the percentage of the population for the two extreme income
+                    brackets. I added a horizontal dotted line as a reference for the average percentage of population
+                    for that income bracket for non-SFHZ regions. I used a percentage instead of the
+                    number of people as the population across zones can fluctuate greatly. Throughout the visualization,
+                    it can be seen that generally, there is a higher probability for highly single-family zoned
+                    neighborhoods to have a higher ratio of high income earners, and a lower ratio of extremely low
+                    income earners, as we expected. The trend for the high-income group was stronger than the extremely
+                    low-income trend, and it could be seen that zones with the highest percentage of high-income earners
+                    (above 50%) all were zones with high-percentage single-family zoning (>80%).
+                </figcaption>
+            </figure>
+
+            <h3>What are the prominent ethnic groups in the SFHZ areas? Does the ethnic make-up change depending on
+                the zoning type?</h3>
+            <figure>
+                <img src="images/ethnic.png" alt="" width="1000" />
+                <figcaption>
+                    The split bar graph shows the comparison between ethnic population make-up in non-SFHZ areas in
+                    Massachusetts and SFHZ areas. First, it can be observed that the
+                    most prominent ethnic group in both zoning areas is white (non-hispanic). Although it can be seen
+                    easily that the percentage of white (non-hispanic) residents increases for SFHZ
+                    areas, it is hard to determine the changes in other ethnic groups as they make up very little of the
+                    overall population and thus have significantly smaller bars. This prompted me to modify the
+                    visualization to show the percentage difference in the population make-up between the two zoning
+                    types, rather than the values directly.
+                </figcaption>
+            </figure>
+
+            <h3>What are the prominent ethnic groups in the SFHZ areas? Does the ethnic make-up change depending on
+                the zoning type?</h3>
+            <figure>
+                <img src="images/ethnic_2.png" alt="" width="1000" />
+                <figcaption>
+                    The above bar plot is a visualization of the percentage difference in the ethnic group composition
+                    between non-SFHZ and SFHZ areas. Compared to the above, it is significantly easier to see that while
+                    there are more white (non-hispanic) residents in SFHZ areas, zoning tends to decrease the ratio of
+                    all other races (Asian, hispanic, Black or African, and others).
+                    <br /><br />
+                    Follow up question:
+                    <ol>
+                        <li>Why does zoning seem to affect the hispanic population most drastically? What kind of
+                            analysis could we conduct to further understand this situation?
+                        </li>
+                    </ol>
+                </figcaption>
+            </figure>
+
+            <h3>Is there a difference in the type of households present in SFHZ and non-SFHZ areas?</h3>
+            <figure>
+                <img src="images/household.png" alt="" width="1000" />
+                <figcaption>
+                    The above pie chart visualizes the difference in the make-up of housing types in zones with
+                    SFHZ and without. I categorized the 13 family and non-family household sizes into
+                    four groups for digestibility: small and large non-family, and small and large family households. It
+                    can be observed that SFHZ areas have a significantly higher overall make-up of
+                    family households (both large and small family households, but especially small) than non-SFHZ
+                    residential areas.
+                    <br /><br />
+                    Follow up questions:
+                    <ol>
+                        <li>Are areas without SFHZ heavily populated with students (hence many non-family residents)?
+                            This would also bring down
+                            the ratio of high-income earners.
+                        </li>
+                        <li>In the future, how can we further disentangle these factors
+                            to isolate the impact of SFHZ from external demographic factors?</li>
+                    </ol>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Summary</h2>
+
+            <p>In this exploratory data analysis, we delve into the relationship that single-family house zoning has
+                with geography, demography, income and household types within Massachusetts. We find that while there
+                are no strong spatial patterns in which these zones are located, they are highly correlated with income
+                (more high-income earners and less low-income earners reside in SFHZ areas), demography (non-white
+                residents are less likely to reside in SFHZ) and household types (more family households in SFHZ areas
+                than non-family households).
+
+                However, there is more work to be done to disentangle the discovered relationships, and it is unclear if
+                such patterns are a result of SFHZ, or if the underlying factors caused more SFHZ to arise in the areas.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

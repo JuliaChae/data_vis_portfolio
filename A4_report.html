@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+	<style>
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 4</small>
+			Persuasive or Deceptive Visualization?
+		</h1>
+
+		<p>
+			<strong>Julia Chae</strong> — <em>chaenayo@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<h2>Proposition: Black-american civilians are disproportionately affected by police misdemeanors in NYC</h2>
+
+		<section>
+			<h3>FOR the Proposition</h3>
+
+			<figure>
+				<img src="images/for_proposition.png" alt="" />
+				<figcaption>
+					Civilian Complaint Counts Against NYC Police Officers Across Races Showing Black-American Civilians
+					are Disproportionately Affected by Police Misdemeanors in NYC
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li><b>Coloring Allegation Types: </b>In the visualization, red hues were used to denote urgency and
+					negativity, with darker shades assigned to higher bars for emphasis. Each allegation type was given
+					a different shade of red to avoid clutter and enhance clarity, eliminating the need for x-axis
+					labels on each allegation. <b>Deception Score: </b> 2.0</li>
+				<li><b>Grouping Allegation Types: </b>The dataset was initially comprised of four primary allegation types:
+					Force, Offensive Language, Discourtesy, and Abuse of Authority. To enhance the visualization's
+					nuance, I regrouped these allegations into ten distinct types with more descriptive titles. For
+					instance, "Force" was subdivided into "Physical Force" and "Force with Weapon," while a portion of
+					"Abuse of Authority" was recategorized as "Search," among other adjustments. Also to better support
+					this proposition, I omitted two allegation types (“Sexual misdemeanor” and “Other Offensive
+					Languages”) that had very little number of complaint counts across all races, including
+					black. <b>Deception Score: </b> 1.5</li>
+				<li><b>Omitting Racial Groups: </b>To improve the visualization's clarity, I opted to merge the
+					"American Indian" category with the "Other Race" group due to the minimal counts in the "American
+					Indian" group. Additionally, I excluded complaint counts for "Unknown" or "Refused to Answer"
+					categories to prevent overcrowding and potential confusion among viewers when comparing them to the
+					“Other Race” category. <b>Deception Score: </b> 1.5</li>
+				<li><b>Easing Point of Comparison: </b>To highlight differences in complaint counts, a silhouette of the
+					black civilian complaint count bar graph was included in the background of all other race group
+					graphs. This ensured consistent axis ranges and made it easy for viewers to discern variations in
+					complaint numbers between the black civilian complaints and other races'. <b>Deception Score: </b>
+					2.0
+				</li>
+				<li><b>Annotation with the main message: </b> To underscore the main message, an annotation was added
+					beneath the Black civilian's bar graph, supporting the proposition. The annotation text was colored
+					in dark red to match the bar graph and stand out from other elements. Additionally, it was enclosed
+					in a box to draw further attention. <b>Deception Score: </b> 2.0</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>AGAINST the Proposition</h3>
+
+			<figure>
+				<img src="images/against_proposition.png" alt="" />
+				<figcaption>
+					Civilian Complaint Type Percentage Against NYC Police Officers Across Races Showing Black-American
+					Civilians
+					are Not Disproportionately Affected by Police Misdemeanors in NYC
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li><b>Visualization Framing: </b>For the opposing viewpoint's visualization, I opted to illustrate the
+					percentage of civilian complaint types attributed to each race. This strategic decision involved
+					excluding details regarding the actual numbers or ratios of complaints across different racial
+					groups. Notably, this omission obscured the fact that black civilians accounted for the majority of
+					complaints filed against police misdemeanors. <b>Deception Score: </b>-2.0</li>
+				<li><b>Decreasing Trend: </b>During my analysis, I noticed a distinct trend where a higher percentage of
+					complaints were filed for "Force" misdemeanors by black civilians compared to other racial
+					groups. Consequently, this discrepancy led to a lower proportion of complaints categorized under
+					"Offensive Language," "Discourtesy," and "Abuse of Authority" for black civilians in comparison to
+					most other racial demographics. Capitalizing on this trend, I emphasized a perceived "Decreasing"
+					pattern among racial groups, organized from highest to lowest proportions for these specific
+					complaint types. This trend was further underscored by an arrow placed above the "Offensive Language" segment.
+					<b>Deception Score: </b>-2.0
+				</li>
+				<li><b>Strategic Coloring and Allegation Type Ordering to Remove Attention from Certain Elements: </b>To
+					place more attention on the decreasing trend and divert attention from the increasing percentage of
+					“force” complaints, I opted for white to represent the "Force" category, while using red, orange,
+					and yellow hues for the remaining allegation types. This deliberate color selection diminishes the
+					visibility of the rising "Force" percentage, creating the illusion of declining complaint rates for
+					racial groups positioned to the right. By placing black civilians second from the right, this ordering subtly 
+					implies comparatively lower complaint rates for this demographic. Also, "Force" was placed on top of the other 
+					allegations, reducing visibility even more and blending in with the background. <b>Deception Score:
+					</b>-2.0</li>
+				<li><b>Annotation with the main message: </b>To emphasize this decreasing trend and to highlight the
+					placement of the black racial category relative to others, I included an annotation above the
+					"Black" column. This annotation asserts that black civilians exhibit the second-lowest proportion of
+					the three complaint types (excluding "Force"). Emphasizing the term "2nd lowest" over the complaint
+					types, the annotation conveys the idea of relatively low police complaint rates for this racial
+					group. <b>Deception Score: </b>-1.5</li>
+				<li><b>Ambiguous Title: </b>It is not immediately clear from the title if the graph is showing the
+					percentage of civilian complaint types within each race, or percentage of racial group makeup for
+					each civilian complaint type. This ambiguity encourages the reader to seek more clarity from other
+					visualization elements. <b>Deception Score: </b>-1.0</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Reflection</h2>
+
+			<p>It was surprisingly challenging to interpret the data from opposing viewpoints and create visualizations
+				to support divergent conclusions. Designing for the "for" proposition was straightforward due to the
+				significant difference in complaint numbers between black racial groups and others. Here, my task was
+				simply to highlight this contrast effectively, resulting in a clear message. However, when tackling the
+				"against" proposition, I encountered considerable difficulty. Despite my efforts, it took me quite some
+				time to develop a visualization that convincingly conveyed the opposing narrative, and ultimately it was
+				only possible with the use of several deceptive techniques, including incorrect and dishonest framing of
+				the data. <br>
+				<br>
+
+				In defining "ethical analysis and visualization," I now understand it as the process of making design
+				choices that enhance clarity and understanding of existing trends in the data, while also ensuring
+				transparency and honesty in how information is presented, without inorganically fabricating trends.
+				Acceptable persuasive choices involve enhancing the reader's comprehension of the main message, removing
+				extraneous details that do not alter the overall conclusion, and appealing to emotions associated with
+				the main message of the visualization. Conversely, unacceptable persuasive choices involve omitting
+				information that alters the narrative, selecting visualizations or framing that support only one
+				interpretation, and purposefully obscuring information. <br>
+				<br>
+
+				Reflecting on my own visualizations, I recognize the contrast in approach between the two propositions.
+				The first visualization, crafted to support the "for" proposition, embodied a more earnest and
+				transparent approach. Here, the design choices were made to enhance reader comprehension, while maintaining integrity and clarity in the presentation of the data. For example,
+				even if alternative design paths were explored - such as including all allegation groups and racial
+				categories, employing different visualization types or color schemes - the overarching proposition
+				remained well-supported. In contrast, the second visualization, designed to support the
+				"against" proposition, required a departure from ethical design principles. I relied heavily on a
+				combination of selective framing, deceptive techniques, and strategic omission of information. The
+				resulting visualization wasn't designed to present underlying trends in the data but rather to
+				manipulate perceptions and reinforce a predetermined narrative. It became apparent that if I had made
+				different design choices (e.g. including all allegation groups and races, picking a different type of
+				graph, changing colors) the deceptive nature of the visualization would be exposed.
+			</p>
+		</section>
+	</main>
+</body>
+
+</html>

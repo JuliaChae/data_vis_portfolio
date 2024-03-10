@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Design
+		</h1>
+
+		<p>
+			<strong>Julia Chae</strong> — <em>chaenayo@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Phase One: Sketching Visualizations</h2>
+			<h3>Question: What shifts have occurred in the distribution of the population from 1900 to 2000, and do
+				these trends differ between the sexes?</h3>
+
+			<figure>
+				<img src="images/sketch1.jpg" alt=""  width="1000"/>
+				<figcaption>
+					Vertical Bar Graph of Population Distribution for 1900 and 2000
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>The aim was to create a clear snapshot visualization illustrating the distribution of male and
+					female populations across age groups in both censuses. By stacking horizontal bars in age group
+					order, viewers can easily discern the distribution pattern depicted by the bar graph's shape. The
+					symmetrical layout facilitates direct comparisons between genders.
+				</li>
+				<li>The goal was to highlight differences in distributions between the two censuses and identify any
+					distinct trends between genders. While changes in magnitude are readily visible, it's challenging to
+					discern differences, if any, in how male and female populations evolved from 1900 to 2000.
+				</li>
+				<li>An aspect requiring clarification in future iterations is the overlap of bars. Despite color/pattern
+					differentiation, it remains unclear whether the 2000 bar includes counts from 1900 or represents a
+					separate count starting where the 1900 bar ends. This issue should be addressed in future iterations
+					for enhanced clarity.
+				</li>
+			</ul>
+
+			<figure>
+				<img src="images/sketch2.jpg" alt=""  width="1000"/>
+				<figcaption>
+					Dual Axis Bar and Line Graph Depicting Population Increase Between 1900 and 2000
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>The objective here was to provide comprehensive insights into population dynamics from 1900 to 2000
+					by presenting both absolute population numbers for each year and the relative change in each age
+					group for the two sexes.
+				</li>
+				<li>The aim was not only to illustrate the overall population increase trend but also to highlight
+					differences in the relative increase of specific age group populations between 1900 and 2000,
+					particularly between genders. Notably, female populations in older age groups experienced a
+					significantly larger increase (4000%) compared to older male populations (2000%). This was
+					effectively demonstrated by the fixed axis ranges, enabling direct comparison of line plots and
+					showing a substantial upward trend in the female line plot towards the right compared to the male
+					line plot.
+				</li>
+				<li>However, it may be beneficial to consider using a log-scale axis for the percentage increase,
+					especially for older age groups where the percentage increase is notably high compared to the
+					younger age groups. Additionally, to avoid confusion with two axes, it's important to provide
+					additional information such as color coordination to ensure that the correct elements of the graph
+					are associated with the correct axis.
+				</li>
+			</ul>
+
+			<figure>
+				<img src="images/sketch3.jpg" alt=""  width="1000"/>
+				<figcaption>
+					Pie Charts of Population Make-Up by Age Groups and Sexes For 1900 and 2000
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>I believed a pie chart would effectively depict the male and female population proportions relative
+					to the total population, and whether the percentage composition of specific age groups for each sex
+					changed over time.
+				</li>
+				<li>My intention was for the visualization to indicate the dominant sex in terms of population in both
+					1900 and 2000, as well as to illustrate the predominant age group within the population and whether
+					this composition shifted over the years.
+				</li>
+				<li>While the pie chart successfully conveyed information about the sex ratio by dividing it into male
+					and female segments, discerning the relative population increase between 1900 and 2000 from pie
+					sizes alone proved challenging. Furthermore, drawing meaningful conclusions about changes in
+					distribution from slice sizes was difficult and required additional inference from the viewer.
+				</li>
+			</ul>
+
+			<h3>Reflection</h3>
+
+			<p>
+				I find that each of the three sketches has its own set of strengths and weaknesses. The first sketch
+				effectively conveys the population distribution across age groups for both 1900 and 2000, yet it lacks
+				details regarding the relative population changes within each age group, which are crucial but not
+				easily discernible from the visualization alone. On the other hand, the second graph is the most
+				informative, successfully illustrating the relative changes across age groups while also providing
+				information about the absolute population. However, the dual axis arrangement can be confusing, and I
+				believe there is room for improvement in scaling the axis for percentage increase. As for the final
+				sketch, it offers unique insights by presenting age/sex groups relative to the total population.
+				However, it falls short in providing adequate details to gauge changes in distribution accurately.
+				Moving forward, I intend to blend elements from the first two sketches in my visualization. I plan to
+				base it on the first sketch but incorporate the relative increase information from the second sketch to
+				enhance its informativeness. Additionally, I will consider modifying elements in the 2nd plot in the
+				relative increase axis, such as employing log-scaling for the axis, to improve clarity. Although I do
+				not plan on incorporating key elements of sketch 3, I do appreciate the use of size as a design element
+				in the pie charts, and may integrate this concept to differentiate between 1900 and 2000 bars in my
+				final visualization.
+			</p>
+
+		</section>
+
+		<section>
+			<h2>Phase Two: Final Design</h2>
+
+			<figure>
+				<img src="images/A3_vis.png" alt=""  width="1000"/>
+				<figcaption>
+					What shifts have occurred in the distribution of the population from 1900 to 2000, and do these
+					trends differ between the sexes?
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+				<b>What story am I trying to tell? </b><br>
+				Following the sketching and reflection process, I proceeded to synthesize my final visualization by
+				incorporating elements from my sketches to enhance it. Opting for the vertical bar graph, I found it to
+				be the most effective in conveying the overall population distribution at a glance, providing digestible
+				information to the viewer. However, I decided to augment this population graph by including an
+				additional element: the magnitude of relative population change across the two years for each age group.
+				With this addition, the aspects of the data I am trying to most effectively communicate are twofold: 1)
+				to highlight the substantial increase in population over the century for both genders and 2)
+				illustrating the notable difference in population increase between older age groups of males and
+				females. These two narratives are also two of the most prominent aspects of my visualization, evident in
+				the considerable difference in length between the 1900 and 2000 population bars, and the asymmetry in
+				the length of the % Increase bars towards the bottom of the graph.<br><br>
+
+				<b>Visual encodings I used and the rationale </b><br>
+				I selected the vertical bar graph, a widely recognized visualization method for population data. I
+				believe its familiarity to most audience members allows them to immediately grasp the emphasized visual
+				elements without needing to decipher the main graph or axis. As well, I like the symmetric aspect of
+				this visualization as it aids in easy observation of changes without additional effort. I sorted the
+				graph by age groups and positioned the age group labels in the center to prevent them from being
+				obscured and to maintain symmetry in the visualization. To distinguish between populations from
+				different centuries, I used different colors and sizes for the inner bar graph. This makes it clear that
+				the data represents two distinct time periods, and adjusting the size of bars to show overlap prevents
+				confusion about whether the data is cumulative. For the outer bar graph, I used a different color for
+				the bar to distinguish it from the inner graph. For both inner and outer graphs, I made sure to keep the
+				axis range consistent for male and female sizes to allow for easy comparison. To simplify the
+				visualization, I combined age groups into 10-year increments instead of 5-year increments, as I felt
+				that although 5-year increments were fine-grained and informative, it felt overwhelming especially with
+				the double bar-graph formation. I also calculated the relative percentage increase to include in the
+				visualization. While I experimented with logarithmic plotting for conveying this information, I found
+				that it obscured the difference in relative increase between the two sides. Therefore, I opted for a
+				linear scale, similar to the visualization in sketch 2.<br><br>
+
+				<b>Limitations of the Visualization</b><br>
+				Some aspects downplayed or obscured by my visualization design include the overall population makeup and
+				the magnitude of older population groups. For instance, it's unclear whether there's a larger female or
+				male population overall, and whether this changes over the two decades. Additionally, precise magnitude
+				information for older population groups is obscured as the magnitudes decrease significantly, making it
+				difficult to gauge for both 2000 and 1900. However, this information is supplemented by the percentage
+				increase data, which offers insights into older populations that may be hard to discern visually.
+			</p>
+
+
+			<h3>Reflection</h3>
+
+			<p>
+				Sketching was definitely beneficial for me, and I shaped most of my major design choices based on
+				elements from one of the three sketches in phase 1. By sketching each design and evaluating their
+				strengths and weaknesses, I developed an enhanced visualization that leveraged the best features of
+				multiple sketches.For example, although I liked the graph for sketch 1, I found it less informative
+				compared to sketch 2, which I addressed in my final visualization by adding an additional axis inspired
+				by sketch 2. Additionally, I refined or discarded confusing elements from sketch 1, such as adjusting
+				axis labels and distinguishing between bars for 1900 and 2000. This iterative process saved time and
+				allowed me to identify areas for improvement in future iterations before proceeding with creating the
+				final visualization.
+			</p>
+		</section>
+	</main>
+</body>
+
+</html>
